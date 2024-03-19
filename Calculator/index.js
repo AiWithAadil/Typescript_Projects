@@ -1,9 +1,10 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 const CalculatorInput = await inquirer.prompt([
     {
         type: "number",
         name: "num1",
-        message: "Enter First Value: "
+        message: "Enter First value: "
     },
     {
         type: "list",
