@@ -1,11 +1,12 @@
 import inquirer from "inquirer";
 
-let user_balance = 0;
-
+let user_balance = 100000;
+let user_pin = 123
+let user_id = "atm123" 
 
 const atm = await inquirer.prompt([
         {
-            type: "number",
+            type: "string",
             name: "id",
             message: "Enter your user id: ",
         },
@@ -16,8 +17,7 @@ const atm = await inquirer.prompt([
         }
     ]);
 
-    const user_pin = atm.pin;
-    const user_id = atm.id;                        //This Promise will resolve to void, meaning it doesn't return any specific value. 
+                             //This Promise will resolve to void, meaning it doesn't return any specific value. 
 async function atmSystem(pin: number, id: string): Promise<void> {
     if (pin === user_pin && id === user_id) {
         console.log("Successfully login");
@@ -33,7 +33,7 @@ async function atmSystem(pin: number, id: string): Promise<void> {
                     type: "list",
                     name: "atm_options",
                     message: "Please select one option you want to do",
-                    choices: ['Check Balance', 'Withdraw', 'Deposit', 'Exit']
+                    choices: ['Check Balance', 'Withdraw', 'Deposit',"Exit"]
                 }
             ]);
             if (atmInputs.atm_type === "Current Account" || atmInputs.atm_type === "Saving Account") {
@@ -66,7 +66,6 @@ async function atmSystem(pin: number, id: string): Promise<void> {
                     console.log(`Deposit successful. New balance: ${user_balance}`);
                 } else if (atmInputs.atm_options === 'Exit') {
                     console.log("Thank you");
-                    
                     break;
                 } else {
                     console.log("Invalid input");

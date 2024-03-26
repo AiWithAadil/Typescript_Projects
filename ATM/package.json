@@ -1,5 +1,5 @@
 {
-  "name": "atm",
+  "name": "atm-npx-007",
   "version": "1.0.0",
   "description": "This is my ATM project console-based application.",
   "main": "atm.js",
