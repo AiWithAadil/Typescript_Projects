@@ -1,14 +1,16 @@
 {
-  "name": "atm-npx-007",
+  "name": "npx-atm-s_m_adil-project",
   "version": "1.0.0",
-  "description": "This is my ATM project console-based application.",
+  "description": "",
   "main": "atm.js",
   "type": "module",
+  "bin": "atm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "S.M Aadil",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "inquirer": "^9.2.16"
   },
