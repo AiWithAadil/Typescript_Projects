@@ -1,0 +1,19 @@
+{
+  "name": "student-management-sm_adil_ahmed",
+  "version": "1.0.0",
+  "description": "Student Management System",
+  "main": "index.js",
+  "type": "module",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "S.M Adil",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.18"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
