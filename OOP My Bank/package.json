@@ -1,0 +1,20 @@
+{
+  "name": "npx-opp-my-bank-sm-aadil-007",
+  "version": "1.2.0",
+  "description": "",
+  "main": "Bank.js",
+  "type": "module",
+  "bin": "Bank.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.22"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
